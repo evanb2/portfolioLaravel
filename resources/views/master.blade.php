@@ -10,27 +10,37 @@
         <title>Evan Butler</title>
     </head>
     <body>
-        <div class="navbar navbar-default navbar-fixed-top">
+
+        <!-- NAVBAR -->
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation" style="height: 80px;">
             <div class="container">
                 <div class="navbar-header">
-
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <h3 class="navbar-brand"><a href="/">evan butler</a></h3>
                 </div>
-                <div class="navbar-collapse collapse" id="navbar">
-
+                <div class="navbar-collapse collapse" id="navbar" aria-expanded="false">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Reading</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <div class="container">
+
+        <div class="container" style="padding-top: 100px;">
             <div class="row">
                 <div class="col-md-6 col-md-offset-4">
                     <h1>evan butler</h1>
                     <h4>Junior Developer</h4>
-                    <p>
-                        <a href="/about">About</a> ~
-                        <a href="#">Projects</a> ~
-                        <a href="#">Reading</a> ~
-                        <a href="/contact">Contact</a>
-                    </p>
                 </div>
             </div>
 
