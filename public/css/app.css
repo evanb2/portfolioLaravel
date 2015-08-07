@@ -34,7 +34,8 @@ a {
 
 a:hover {
   color: #DEC3C3;
-  text-decoration: line-through; }
+  font-style: oblique;
+  text-decoration: none; }
 
 #about, #contact, #projects, #reading {
   color: black; }
