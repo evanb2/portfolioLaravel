@@ -3,21 +3,61 @@
 @section('content')
 
 <div class="row">
-    <div class="col-md-6">
-        <p>
-            After graduating from the University of Denver with a B.S. in Psychology
-            I served two years in the Israeli Defense Forces, stationed in the West Bank.
-            Having grown up in Chicago, studied in Denver and Budapest, and served in Israel
-            I'm now living in Portland, Oregon. Currently attending Epicodus coding boot
-            camp for PHP and Drupal with the hope of becoming a Web Developer.
-        </p>
+    <div class="col-md-6 col-md-offset-3" id="about-content">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <p>
+                    After graduating from the University of Denver with a B.S. in Psychology
+                    I served two years in the Israeli Defense Forces, stationed in the West Bank.
+                    Having grown up in Chicago, studied in Denver and Budapest, and served in Israel
+                    I'm now living in Portland, Oregon. Currently attending Epicodus coding boot
+                    camp for PHP and Drupal with the hope of becoming a Web Developer.
+                </p>
+            </div>
+        </div>
 
-        <h2>Technical Skills</h2>
-        <p>
+        <div class="row" id="tech-skills-row">
+            <h2>Technical Skills</h2>
+            <div class="row logos">
+                <div class="col-sm-4">
+                    <img src="/img/php.jpeg" alt="PHP Elephant" width="100px"/>
+                </div>
+                <div class="col-sm-4">
+                    <img src="/img/javascript.jpeg" alt="Javascript" width="80px"/>
+                </div>
+                <div class="col-sm-4">
+                    <img src="/img/mysql.jpeg" alt="MySQL" width="90px"/>
+                </div>
+            </div>
+            <div class="row logos">
+                <div class="col-sm-4">
+                    <img src="/img/jquery.jpeg" alt="jQuery" width="90px"/>
+                </div>
+                <div class="col-sm-4">
+                    <img src="/img/ajax.jpeg" alt="Ajax" width="90px"/>
+                </div>
+                <div class="col-sm-4">
+                    <img src="/img/css.jpeg" alt="CSS" width="90px"/>
+                </div>
+            </div>
+            <div class="row logos">
+                <div class="col-sm-4">
+                    <img src="/img/laravel.jpeg" alt="Laravel 5" width="150px"/>
+                </div>
+                <div class="col-sm-4">
+                    <img src="/img/symfony.jpeg" alt="Symfony" width="90px"/>
+                </div>
+                <div class="col-sm-4">
+                    <img src="/img/github.jpeg" alt="GitHub" width="100px"/>
+                </div>
+            </div>
+        </div>
 
-        </p>
-
-        <a href="/resume">Resume</a>
+        <div class="row resume-link">
+            <div class="col-sm-4 col-sm-offset-4">
+                <a href="/resume">Resume</a>
+            </div>
+        </div>
     </div>
 </div>
 
