@@ -23,6 +23,10 @@ Route::get('/contact', function() {
     return view('pages.contact');
 });
 
+Route::get('/projects', function() {
+    return view('projects.index');
+});
+
 Route::get('/resume', function() {
     return view('pages.resume');
 });

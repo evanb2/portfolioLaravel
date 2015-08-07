@@ -27,7 +27,7 @@
                     <ul class="nav navbar-nav" id="nav-links">
                         <li><a href="/about" id="about">About</a></li>
                         <li><a href="/contact" id="contact">Contact</a></li>
-                        <li><a href="#" id="projects">Projects</a></li>
+                        <li><a href="/projects" id="projects">Projects</a></li>
                         <!-- <li><a href="#" id="reading">Reading</a></li> -->
                     </ul>
                     <!-- <ul class="nav navbar-nav navbar-right"></ul> -->

@@ -49,7 +49,7 @@ a:hover {
   line-height: 1.6em; }
 
 /** About Page */
-#about-content, #contact-content {
+#about-content, #contact-content, #projects-index-content {
   background-color: white;
   opacity: .93;
   border-radius: 20px;
@@ -78,5 +78,9 @@ a:hover {
 .email {
   text-align: center;
   font-family: "proxima-nova"; }
+
+/** Projects Page */
+.project-links {
+  margin-left: 25px; }
 
 /*# sourceMappingURL=app.css.map */
