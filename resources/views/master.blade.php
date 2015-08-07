@@ -12,7 +12,7 @@
     <body>
 
         <!-- NAVBAR -->
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation" style="height: 80px;">
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation" >
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -24,25 +24,18 @@
                     <h3 class="navbar-brand"><a href="/">evan butler</a></h3>
                 </div>
                 <div class="navbar-collapse collapse" id="navbar" aria-expanded="false">
-                    <ul class="nav navbar-nav">
-                        <li><a href="/about">About</a></li>
-                        <li><a href="/contact">Contact</a></li>
+                    <ul class="nav navbar-nav" id="nav-links">
+                        <li><a href="/about" id="about">About</a></li>
+                        <li><a href="/contact" id="contact">Contact</a></li>
+                        <li><a href="#" id="projects">Projects</a></li>
+                        <li><a href="#" id="reading">Reading</a></li>
                     </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Reading</a></li>
-                    </ul>
+                    <!-- <ul class="nav navbar-nav navbar-right"></ul> -->
                 </div>
             </div>
         </div>
 
-        <div class="container" style="padding-top: 100px;">
-            <div class="row">
-                <div class="col-md-6 col-md-offset-4">
-                    <h1>evan butler</h1>
-                    <h4>Junior Developer</h4>
-                </div>
-            </div>
+        <div class="container" id="content">
 
             @yield('content')
 

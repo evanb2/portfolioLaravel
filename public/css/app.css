@@ -1,0 +1,36 @@
+.navbar {
+  height: 80px;
+  background-color: white;
+  opacity: .8; }
+
+.navbar-brand {
+  padding-top: 10px; }
+
+#navbar {
+  padding-top: 17px; }
+
+#content {
+  padding-top: 100px; }
+
+body {
+  background-color: #EBE0D6;
+  padding-bottom: 200px;
+  background-image: url("../img/center_ridge.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+
+.jumbotron {
+  background-color: white;
+  opacity: .9; }
+
+#prof-pic {
+  opacity: 1; }
+
+a {
+  color: #669999; }
+
+#about, #contact, #projects, #reading {
+  color: black; }
+
+/*# sourceMappingURL=app.css.map */
