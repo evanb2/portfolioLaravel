@@ -21,7 +21,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <h3 class="navbar-brand"><a href="/">evan butler</a></h3>
+                    <h3 class="navbar-brand"><a href="/">to being well versed, in all things.</a></h3>
                 </div>
                 <div class="navbar-collapse collapse" id="navbar" aria-expanded="false">
                     <ul class="nav navbar-nav" id="nav-links">

@@ -8,6 +8,7 @@
 
 .navbar-brand {
     padding-top: 10px;
+    font-family: "proxima-nova";
 }
 
 #navbar {
@@ -34,12 +35,32 @@ body {
 
 #prof-pic {
     opacity: 1;
+    border-radius: 20px;
 }
 
 a {
     color: #669999;
 }
 
+a:hover {
+    color: #DEC3C3;
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: line-through;
+}
+
 #about, #contact, #projects, #reading {
     color: black;
+}
+
+#name, .jumbotron {
+    text-align: center;
+    font-family: "proxima-nova";
+    letter-spacing: 20px;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 54px;
+    line-height: 1.6em;
 }
