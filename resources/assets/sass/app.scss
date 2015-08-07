@@ -29,8 +29,10 @@ body {
 }
 
 .jumbotron {
+    // margin-left: 190px;
+    // width: 750px;
     background-color: white;
-    opacity: .9;
+    opacity: .93;
 }
 
 #prof-pic {
@@ -66,9 +68,9 @@ a:hover {
 }
 
 /** About Page */
-#about-content {
+#about-content, #contact-content {
     background-color: white;
-    opacity: .9;
+    opacity: .93;
     border-radius: 20px;
     padding: 30px;
     font-family: "proxima-nova";
@@ -90,4 +92,14 @@ a:hover {
     letter-spacing: 10px;
     font-weight: 300;
     font-size: 20px;
+}
+
+/** Contact Page */
+.social {
+    margin-left: 25px;
+}
+
+.email {
+    text-align: center;
+    font-family: "proxima-nova";
 }
