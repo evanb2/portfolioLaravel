@@ -7,11 +7,13 @@
         <div class="row">
             <div class="col-md-10 col-md-offset-1">
                 <p>
-                    After graduating from the University of Denver with a B.S. in Psychology
-                    I served two years in the Israeli Defense Forces, stationed in the West Bank.
-                    Having grown up in Chicago, studied in Denver and Budapest, and served in Israel
-                    I'm now living in Portland, Oregon. Currently attending Epicodus coding boot
-                    camp for PHP and Drupal with the hope of becoming a Web Developer.
+                    After graduating from the University of Denver with a B.S.
+                    in Psychology I served two years in the Israeli Defense Forces,
+                    stationed in the West Bank. Having grown up in Chicago, studied
+                    in Denver and Budapest, and served in Israel I'm now living in
+                    Portland, Oregon. I attended Epicodus for Web Development and
+                    found a true passion. I love that I get to do something that
+                    combines problem solving, logic, creativity, and design.
                 </p>
             </div>
         </div>
