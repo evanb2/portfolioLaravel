@@ -11,6 +11,11 @@
     font-family: "proxima-nova";
 }
 
+.navbar-collapse.collapse.in, .navbar-collapse.collapsing {
+    background-color: #FFF0E0;
+    opacity: .93;
+}
+
 #navbar {
     padding-top: 17px;
 }
