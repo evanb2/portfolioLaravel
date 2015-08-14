@@ -63,10 +63,6 @@ a:hover {
     text-decoration: none;
 }
 
-// a:active {
-//     text-decoration: line-through;
-// }
-
 #about, #contact, #projects, #reading {
     color: black;
 }
@@ -110,7 +106,7 @@ a:hover {
 
 /** Contact Page */
 .social {
-    margin-left: 25px;
+    margin-left: 35%;
 }
 
 .email {
@@ -121,4 +117,21 @@ a:hover {
 /** Projects Page */
 .project-links {
     margin-left: 25px;
+}
+
+/* ------------ Mobile sizing ------------ */
+@media screen and (max-width: 400px) {
+    #contact-content {
+        display: inline-block;
+        margin-left: 25%;
+    }
+
+    .social {
+        margin-left: 0%;
+    }
+
+    #instagram {
+        margin-left: 6%;
+        margin-top: 10%;
+    }
 }
