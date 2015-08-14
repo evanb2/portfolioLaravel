@@ -11,15 +11,8 @@
     font-family: "proxima-nova";
 }
 
-// .collapse.in {
-//     margin-left: 600px;
-//     background-color: #FFF0E0;
-//     text-align: center;
-//     opacity: 1;
-// }
-
 .navbar-collapse.collapsing, .navbar-collapse.collapse.in {
-    margin-left: 600px;
+    float: right;
     background-color: #FFF0E0;
     text-align: center;
     opacity: .93;
