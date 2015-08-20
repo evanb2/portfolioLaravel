@@ -27,6 +27,10 @@ Route::get('/projects', function() {
     return view('projects.index');
 });
 
+Route::get('/epifoodus', function() {
+    return view('projects.epifoodus');
+});
+
 Route::get('/resume', function() {
     return view('pages.resume');
 });
