@@ -9,35 +9,35 @@
             <h2>Technical Skills</h2>
             <div class="row logos">
                 <div class="col-sm-4">
-                    <img src="/img/php.jpeg" alt="PHP Elephant" width="100px"/>
+                    <img src="/img/php.jpeg" alt="PHP Elephant" width="80%" class="img-responsive"/>
                 </div>
                 <div class="col-sm-4">
-                    <img src="/img/javascript.jpeg" alt="Javascript" width="80px"/>
+                    <img src="/img/javascript.jpeg" alt="Javascript" width="80%" class="img-responsive"/>
                 </div>
                 <div class="col-sm-4">
-                    <img src="/img/mysql.jpeg" alt="MySQL" width="90px"/>
-                </div>
-            </div>
-            <div class="row logos">
-                <div class="col-sm-4">
-                    <img src="/img/jquery.jpeg" alt="jQuery" width="90px"/>
-                </div>
-                <div class="col-sm-4">
-                    <img src="/img/ajax.jpeg" alt="Ajax" width="90px"/>
-                </div>
-                <div class="col-sm-4">
-                    <img src="/img/css.jpeg" alt="CSS" width="90px"/>
+                    <img src="/img/mysql.jpeg" alt="MySQL" width="80%" class="img-responsive"/>
                 </div>
             </div>
             <div class="row logos">
                 <div class="col-sm-4">
-                    <img src="/img/laravel.jpeg" alt="Laravel 5" width="150px"/>
+                    <img src="/img/jquery.jpeg" alt="jQuery" width="80%" class="img-responsive"/>
                 </div>
                 <div class="col-sm-4">
-                    <img src="/img/symfony.jpeg" alt="Symfony" width="90px"/>
+                    <img src="/img/ajax.jpeg" alt="Ajax" width="80%" class="img-responsive"/>
                 </div>
                 <div class="col-sm-4">
-                    <img src="/img/github.jpeg" alt="GitHub" width="100px"/>
+                    <img src="/img/css.jpeg" alt="CSS" width="80%" class="img-responsive"/>
+                </div>
+            </div>
+            <div class="row logos">
+                <div class="col-sm-4">
+                    <img src="/img/laravel.jpeg" alt="Laravel 5" width="80%" class="img-responsive"/>
+                </div>
+                <div class="col-sm-4">
+                    <img src="/img/symfony.jpeg" alt="Symfony" width="80%" class="img-responsive"/>
+                </div>
+                <div class="col-sm-4">
+                    <img src="/img/github.jpeg" alt="GitHub" width="80%" class="img-responsive"/>
                 </div>
             </div>
         </div>
@@ -55,7 +55,7 @@
                 </p>
             </div>
         </div>
-        
+
         <div class="row resume-link">
             <div class="col-sm-4 col-sm-offset-4">
                 <a href="/resume">Resume</a>
