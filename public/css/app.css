@@ -30,7 +30,8 @@ body {
   background-image: url("../img/center_ridge.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  font-family: "proxima-nova"; }
 
 .jumbotron {
   background-color: white;
@@ -41,12 +42,16 @@ body {
   border-radius: 20px; }
 
 a {
-  color: #669999; }
+  color: black;
+  font-family: "Lato"; }
 
 a:hover {
-  color: #DEC3C3;
+  font-weight: bold;
   font-style: oblique;
   text-decoration: none; }
+
+.menu-links:hover {
+  border-bottom: solid; }
 
 #about, #contact, #projects, #reading {
   color: black; }
@@ -73,7 +78,8 @@ a:hover {
 #tech-skills-row {
   padding-left: 5%;
   padding-right: 5%;
-  text-align: center; }
+  text-align: center;
+  font-family: "Lato"; }
 
 .logos {
   padding-bottom: 5%; }
@@ -85,13 +91,19 @@ a:hover {
   font-weight: 300;
   font-size: 20px; }
 
+#resume-img {
+  margin-left: 15%;
+  margin-right: 20%;
+  border-radius: 10px;
+  opacity: .93; }
+
 /** Contact Page */
 .social {
   margin-left: 15%; }
 
 .email {
   text-align: center;
-  font-family: "proxima-nova"; }
+  font-family: "Lato"; }
 
 /** Projects Page */
 .project-links {

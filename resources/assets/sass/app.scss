@@ -39,6 +39,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    font-family: "proxima-nova";
 }
 
 .jumbotron {
@@ -52,13 +53,18 @@ body {
 }
 
 a {
-    color: #669999;
+    color: black;
+    font-family: "Lato";
 }
 
 a:hover {
-    color: #DEC3C3;
+    font-weight: bold;
     font-style: oblique;
     text-decoration: none;
+}
+
+.menu-links:hover {
+    border-bottom: solid;
 }
 
 #about, #contact, #projects, #reading {
@@ -90,6 +96,7 @@ a:hover {
     padding-left: 5%;
     padding-right: 5%;
     text-align: center;
+    font-family: "Lato";
 }
 
 .logos {
@@ -104,6 +111,13 @@ a:hover {
     font-size: 20px;
 }
 
+#resume-img {
+    margin-left: 15%;
+    margin-right: 20%;
+    border-radius: 10px;
+    opacity: .93;
+}
+
 /** Contact Page */
 .social {
     margin-left: 15%;
@@ -111,7 +125,7 @@ a:hover {
 
 .email {
     text-align: center;
-    font-family: "proxima-nova";
+    font-family: "Lato";
 }
 
 /** Projects Page */
