@@ -98,18 +98,11 @@ a:hover {
   opacity: .93; }
 
 /** Contact Page */
-.social {
-  margin-left: 15%;
-  margin-right: 15%; }
-
 .email {
   text-align: center;
   font-family: "Lato"; }
 
 /** Projects Page */
-.project-links {
-  margin-left: 25px; }
-
 /* ------------ Mobile sizing ------------ */
 @media screen and (max-width: 400px) {
   .jumbotron {
@@ -126,7 +119,11 @@ a:hover {
     margin-left: 0%; }
   #instagram {
     margin-left: 6%;
-    margin-top: 10%; } }
+    margin-top: 10%; }
+  .project-links {
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%; } }
 
 @media screen and (min-width: 401px) and (max-width: 768px) {
   .jumbotron {
