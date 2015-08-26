@@ -89,18 +89,24 @@ a:hover {
     opacity: .93;
     border-radius: 20px;
     padding: 30px;
-    font-family: "proxima-nova";
+    font-family: "Lato";
 }
 
 #tech-skills-row {
-    padding-left: 5%;
-    padding-right: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
     text-align: center;
     font-family: "Lato";
 }
 
 .logos {
-    padding-bottom: 5%;
+    // padding-bottom: 5%;
+}
+
+/* Custom Logo Sizing */
+#php-img, #ajax-img, #laravel-img {
+    margin-top: 15%;
+    margin-bottom: 15%;
 }
 
 .resume-link {
