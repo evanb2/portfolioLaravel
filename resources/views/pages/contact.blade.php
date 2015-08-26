@@ -7,17 +7,17 @@
             <div class="row social">
                 <div class="col-sm-4">
                     <a href="https://facebook.com/evan.butler.31">
-                        <img src="/img/contact/facebook.jpeg" alt="Facebook" width="100px"/>
+                        <img src="/img/contact/facebook.jpeg" alt="Facebook" width="100%" class="img-responsive"/>
                     </a>
                 </div>
                 <div class="col-sm-4">
                     <a href="https://github.com/evanb2">
-                        <img src="/img/github.jpeg" alt="GitHub" width="100px"/>
+                        <img src="/img/github.jpeg" alt="GitHub" width="100%" class="img-responsive"/>
                     </a>
                 </div>
                 <div class="col-sm-4">
                     <a href="https://instagram.com/manintheglass">
-                        <img src="/img/contact/instagram.jpeg" alt="Instagram" width="90px"/>
+                        <img src="/img/contact/instagram.jpeg" alt="Instagram" width="100%" class="img-responsive"/>
                     </a>
                 </div>
             </div>
