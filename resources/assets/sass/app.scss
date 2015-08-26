@@ -118,8 +118,6 @@ a:hover {
 }
 
 #resume-img {
-    margin-left: 15%;
-    margin-right: 20%;
     border-radius: 10px;
     opacity: .93;
 }
@@ -151,6 +149,11 @@ a:hover {
         margin-left: 5%;
         margin-right: 5%;
     }
+
+    // #resume-img {
+    //     margin-left: 0%;
+    //     margin-right: 0%;
+    // }
 
     #contact-content {
         display: block;
