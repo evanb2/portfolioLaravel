@@ -98,6 +98,9 @@ a:hover {
   opacity: .93; }
 
 /** Contact Page */
+.contact-imgs {
+  margin-left: 25%; }
+
 .email {
   text-align: center;
   font-family: "Lato"; }
@@ -116,13 +119,8 @@ a:hover {
     margin-left: 5%;
     margin-right: 5%; }
   .contact-imgs {
-    width: 45%;
-    display: inline-block;
     margin-left: 28%;
     margin-right: 28%; }
-  .social {
-    margin-left: 25%;
-    margin-right: 25%; }
   #instagram {
     margin-left: 6%;
     margin-top: 10%; }
