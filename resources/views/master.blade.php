@@ -26,7 +26,7 @@
                 <div class="navbar-collapse collapse" id="navbar" aria-expanded="false">
                     <ul class="nav navbar-nav" id="nav-links">
                         <li><a href="/about" class="menu-links" id="about">About</a></li>
-                        <li><a href="/contact" class="menu-links" id="contact">Contact</a></li>
+                        <!-- <li><a href="/contact" class="menu-links" id="contact">Contact</a></li> -->
                         <li><a href="/projects" class="menu-links" id="projects">Projects</a></li>
                         <!-- <li><a href="#" id="reading">Reading</a></li> -->
                     </ul>
