@@ -11,20 +11,21 @@
     </div>
 
     <div class="row" id="contact-content">
-        <div class="col-sm-4 social">
+        <!-- <div class="col-sm-4 social"> -->
             <a href="https://facebook.com/evan.butler.31">
                 <img src="/img/contact/facebook.jpeg" alt="Facebook" width="50%" class="img-responsive contact-imgs"/>
             </a>
-        </div>
-        <div class="col-sm-4 social">
+        <!-- </div> -->
+        <!-- <div class="col-sm-4 social"> -->
             <a href="https://github.com/evanb2">
                 <img src="/img/github.jpeg" alt="GitHub" width="50%" class="img-responsive contact-imgs"/>
             </a>
-        </div>
-        <div class="col-sm-4 social">
+        <!-- </div> -->
+        <!-- <div class="col-sm-4 social"> -->
             <a href="https://instagram.com/manintheglass">
                 <img src="/img/contact/instagram.jpeg" alt="Instagram" width="50%" class="img-responsive contact-imgs"/>
             </a>
-        </div>
+        <!-- </div> -->
     </div>
+
 @stop

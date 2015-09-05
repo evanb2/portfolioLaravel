@@ -123,19 +123,26 @@ a:hover {
 }
 
 /** Contact Page */
-.social {
-    // margin-left: 15%;
-    // margin-right: 15%;
+// .social {
+//     margin-left: 15%;
+//     margin-right: 15%;
+// }
+
+#contact-content {
+    text-align: center;
 }
 
 .contact-imgs {
-    margin-left: 25%;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 20%;
+    display: inline-block;
 }
 
-.email {
-    text-align: center;
-    font-family: "Lato";
-}
+// .email {
+//     text-align: center;
+//     font-family: "Lato";
+// }
 
 /** Projects Page */
 .project-links {
@@ -164,16 +171,17 @@ a:hover {
     // }
 
     #contact-content {
-        display: block;
+        // display: block;
+        text-align: center;
         margin-left: 5%;
         margin-right: 5%;
     }
 
     .contact-imgs {
-        // width: 25%;
-        // display: inline-block;
-        margin-left: 25%;
-        margin-right: 25%;
+        width: 25%;
+        display: inline-block;
+        margin-left: 0%;
+        // margin-right: 45%;
     }
 
     .social {
