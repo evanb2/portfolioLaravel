@@ -28,7 +28,7 @@
                         <li><a href="/about" class="menu-links" id="about">About</a></li>
                         <!-- <li><a href="/contact" class="menu-links" id="contact">Contact</a></li> -->
                         <li><a href="/projects" class="menu-links" id="projects">Projects</a></li>
-                        <!-- <li><a href="#" id="reading">Reading</a></li> -->
+                        <li><a href="/adventures" class="menu-links" id="adventures">Adventures</a></li>
                     </ul>
                     <!-- <ul class="nav navbar-nav navbar-right"></ul> -->
                 </div>
