@@ -6,7 +6,7 @@
         <div class="jumbotron col-lg-8 col-lg-offset-2">
             <h1 id="name">evan butler</h1>
             <h4>Junior Developer</h4>
-            <img id="prof-pic" src="/img/prof_pic2.jpeg" alt="Evan Butler drinking a beer at the hot springs" width="300px"/>
+            <img id="prof-pic" src="/img/prof_pic3.jpg" alt="Me at the Painted Hills with my Alaskan Husky Lior" width="50%"/>
         </div>
     </div>
 
