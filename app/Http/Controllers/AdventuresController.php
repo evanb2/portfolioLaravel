@@ -23,7 +23,7 @@ class AdventuresController extends Controller
         // return view('adventures.index', ['adventures' => $adventures]);
         $adventures = Adventure::all();
 
-        return $adventures;
+        return view('adventures.index', compact('adventures'));
 
     }
 
