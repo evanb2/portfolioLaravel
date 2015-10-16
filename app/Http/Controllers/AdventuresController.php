@@ -56,7 +56,9 @@ class AdventuresController extends Controller
      */
     public function show($id)
     {
-        //
+        $adventure = Adventure::findOrFail($id);
+
+        return view('adventures.show', compact('adventure'));
     }
 
     /**

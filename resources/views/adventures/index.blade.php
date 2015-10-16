@@ -9,7 +9,7 @@
         @foreach ($adventures as $adventure)
             <article>
                 <h3>
-                    <a href="#">{{ $adventure->trail_name }}</a>
+                    <a href="adventures/{{ $adventure->id }}">{{ $adventure->trail_name }}</a>
                 </h3>
 
                 <div class="body">{{ $adventure->description }}</div>
