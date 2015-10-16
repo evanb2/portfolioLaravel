@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
+use DB;
+
 class AdventuresController extends Controller
 {
     /**
@@ -16,7 +18,9 @@ class AdventuresController extends Controller
      */
     public function index()
     {
-        //
+        $adventures = DB::select('select * from adventures');
+
+        return view('adventures.index', ['adventures' => $adventures]);
     }
 
     /**

@@ -1,4 +1,5 @@
 Migrations/MySQL
+----------------
 
 $ ssh forge@104.131.122.40
 $ mysql -u forge -p
@@ -23,3 +24,7 @@ $ php artisan migrate:rollback
 to drop column in 'down' method must install dependency:
     -> $ composer require doctrine/dbal
     -> now you can use method dropColumn('column_name')
+
+Eloquent
+--------
+$ php artisan make:model Adventure
