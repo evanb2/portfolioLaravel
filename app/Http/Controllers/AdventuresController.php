@@ -48,7 +48,6 @@ class AdventuresController extends Controller
     {
         $input = Request::all();
         Adventure::create($input);
-        $input['hiked_on'] = Carbon::now();
 
         return redirect('adventures');
     }

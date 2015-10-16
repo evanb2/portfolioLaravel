@@ -42,10 +42,10 @@
             {!! Form::text('is_lopp', null, ['class' => 'form-control']) !!}
         </div>
 
-        <!-- <div class="form-group">
+        <div class="form-group">
             {!! Form::label('hiked_on', 'Date Hiked: ') !!}
-            {!! Form::text('hiked_on', null, ['class' => 'form-control']) !!}
-        </div> -->
+            {!! Form::input('date', 'hiked_on', date('Y-m-d'), ['class' => 'form-control']) !!}
+        </div>
 
         <!-- Add Adventure Form Input -->
         <div class="form-group">
