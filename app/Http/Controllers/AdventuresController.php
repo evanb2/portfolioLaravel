@@ -22,7 +22,7 @@ class AdventuresController extends Controller
     {
         // $adventures = DB::select('select * from adventures');
         // return view('adventures.index', ['adventures' => $adventures]);
-        $adventures = Adventure::latest('hiked_on')->get();
+        $adventures = Adventure::latest('created_at')->get();
 
         return view('adventures.index', compact('adventures'));
 
