@@ -34,3 +34,13 @@ Forms
 
 $ composer require illuminate/html
     ->1st party package with FormBuilder
+
+in config/app.php under providers ->
+    add: Illuminate\Html\HtmlServiceProvider::class,
+under facades ->
+    add:    'Form'      => Illuminate\Html\FormFacade::class,
+            'Html'      => Illuminate\Html\HtmlFacade::class,
+
+in AdventuresController
+    -> use Illuminate\Http\Request;
+    -> becomes: use Request;

@@ -2,13 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 use DB;
 use App\Adventure;
+use Carbon\Carbon;
 
 class AdventuresController extends Controller
 {
@@ -21,7 +22,7 @@ class AdventuresController extends Controller
     {
         // $adventures = DB::select('select * from adventures');
         // return view('adventures.index', ['adventures' => $adventures]);
-        $adventures = Adventure::all();
+        $adventures = Adventure::latest('hiked_on')->get();
 
         return view('adventures.index', compact('adventures'));
 
@@ -45,7 +46,11 @@ class AdventuresController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $input = Request::all();
+        Adventure::create($input);
+        $input['hiked_on'] = Carbon::now();
+
+        return redirect('adventures');
     }
 
     /**
