@@ -34,7 +34,7 @@ class AdventuresController extends Controller
      */
     public function create()
     {
-        //
+        return view('adventures.create');
     }
 
     /**

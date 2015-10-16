@@ -28,3 +28,9 @@ to drop column in 'down' method must install dependency:
 Eloquent
 --------
 $ php artisan make:model Adventure
+
+Forms
+-----
+
+$ composer require illuminate/html
+    ->1st party package with FormBuilder
