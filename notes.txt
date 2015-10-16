@@ -1,0 +1,25 @@
+Migrations/MySQL
+
+$ ssh forge@104.131.122.40
+$ mysql -u forge -p
+    -> tYhEfD7dd7hYvZbQOlH8
+
+    show databases;
+    use forge;
+    show tables;
+
+if app env = local {
+    DB_HOST = 127.0.0.1 -> NOT 'localhost'
+    MUST add line to 'mysql' array in database.php config file:
+        'port' => '8889'
+}
+
+$ php artisan make:migration --table="name_of_table"
+    ->creates new migration with 'table' boilerplate
+
+$ php artisan migrate
+$ php artisan migrate:rollback
+
+to drop column in 'down' method must install dependency:
+    -> $ composer require doctrine/dbal
+    -> now you can use method dropColumn('column_name')
