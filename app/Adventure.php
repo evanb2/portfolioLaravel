@@ -16,4 +16,6 @@ class Adventure extends Model
         'is_loop',
         'hiked_on'
     ];
+
+    protected $dates = ['hiked_on'];
 }
