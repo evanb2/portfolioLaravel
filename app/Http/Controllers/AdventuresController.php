@@ -8,6 +8,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
 use DB;
+use App\Adventure;
 
 class AdventuresController extends Controller
 {
@@ -18,9 +19,12 @@ class AdventuresController extends Controller
      */
     public function index()
     {
-        $adventures = DB::select('select * from adventures');
+        // $adventures = DB::select('select * from adventures');
+        // return view('adventures.index', ['adventures' => $adventures]);
+        $adventures = Adventure::all();
 
-        return view('adventures.index', ['adventures' => $adventures]);
+        return $adventures;
+
     }
 
     /**
