@@ -22,7 +22,7 @@ class CreateAdventuresTable extends Migration
             $table->integer('length');
             $table->boolean('is_loop');
             $table->timestamps();
-            $table->timestamps('hiked_on');
+            $table->timestamp('hiked_on');
         });
     }
 
