@@ -14,12 +14,12 @@
 
         <div class="form-group">
             {!! Form::label('rating', 'Rating: ') !!}
-            {!! Form::text('rating', null, ['class' => 'form-control']) !!}
+            {!! Form::input('number', 'rating', null, ['class' => 'form-control']) !!}
         </div>
 
         <div class="form-group">
             {!! Form::label('difficulty', 'Difficulty: ') !!}
-            {!! Form::text('difficulty', null, ['class' => 'form-control']) !!}
+            {!! Form::input('number', 'difficulty', null, ['class' => 'form-control']) !!}
         </div>
 
         <div class="form-group">
@@ -34,7 +34,7 @@
 
         <div class="form-group">
             {!! Form::label('length', 'Length (mi): ') !!}
-            {!! Form::text('length', null, ['class' => 'form-control']) !!}
+            {!! Form::input('number', 'length', null, ['class' => 'form-control']) !!}
         </div>
 
         <div class="form-group">
