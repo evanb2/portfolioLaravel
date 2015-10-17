@@ -3,10 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Adventure;
-use App\Http\Requests;
-use App\Http\Requests\CreateAdventureRequest;
+use Illuminate\Http\Request;
+use App\Http\Requests\AdventureRequest;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\Request;
 use Carbon\Carbon;
 
 class AdventuresController extends Controller
@@ -18,12 +17,9 @@ class AdventuresController extends Controller
      */
     public function index()
     {
-        // $adventures = DB::select('select * from adventures');
-        // return view('adventures.index', ['adventures' => $adventures]);
         $adventures = Adventure::latest('created_at')->get();
 
         return view('adventures.index', compact('adventures'));
-
     }
 
     /**
@@ -39,10 +35,10 @@ class AdventuresController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  CreateAdventureRequest  $request
+     * @param  AdventureRequest  $request
      * @return Response
      */
-    public function store(CreateAdventureRequest $request)
+    public function store(AdventureRequest $request)
     {
         Adventure::create($request->all());
 
@@ -70,19 +66,25 @@ class AdventuresController extends Controller
      */
     public function edit($id)
     {
-        //
+        $adventure = Adventure::findOrFail($id);
+
+        return view('adventures.edit', compact('adventure'));
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  Request  $request
+     * @param  AdventureRequest  $request
      * @param  int  $id
      * @return Response
      */
-    public function update(Request $request, $id)
+    public function update(AdventureRequest $request, $id)
     {
-        //
+        $adventure = Adventure::findOrFail($id);
+
+        $adventure->update($request->all());
+
+        return redirect('adventures');
     }
 
     /**

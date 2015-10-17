@@ -2,11 +2,9 @@
 
 @section('content')
 
-    <h2>Create a New Adventure</h2>
+    <h2>Edit: {!! $adventure->trail_name !!}</h2>
 
-    <hr>
-
-    {!! Form::open(['url' => 'adventures']) !!}
+    {!! Form::model($adventure, ['method' => 'PATCH', 'action' => ['AdventuresController@update', $adventure->id]]) !!}
         <div class="form-group">
             {!! Form::label('trail_name', 'Trail Name: ') !!}
             {!! Form::text('trail_name', null, ['class' => 'form-control']) !!}
@@ -49,7 +47,7 @@
 
         <!-- Add Adventure Form Input -->
         <div class="form-group">
-            {!! Form::submit('Add Adventure', ['class' => 'btn btn-primary form-control']) !!}
+            {!! Form::submit('Update Adventure', ['class' => 'btn btn-primary form-control']) !!}
         </div>
     {!! Form::close() !!}
 
