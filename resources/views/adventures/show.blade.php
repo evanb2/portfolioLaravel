@@ -12,6 +12,10 @@
             <li>Difficulty: {{ $adventure->difficulty }}</li>
             <li>Rating: {{ $adventure->rating }}</li>
             <li>Description: {{ $adventure->description }}</li>
+            <li>Directions: {{ $adventure->directions }}</li>
+            <li>Length: {{ $adventure->length }}</li>
+            <li>Loop: {{ $adventure->is_loop }}</li>
+            <li>Date Hiked: {{ $adventure->hiked_on->diffForHumans() }}</li>
         </ul>
 
     </div>
