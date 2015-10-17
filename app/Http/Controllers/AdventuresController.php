@@ -2,13 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use Request;
-
-use App\Http\Requests;
-use App\Http\Controllers\Controller;
-
-use DB;
 use App\Adventure;
+use App\Http\Requests;
+use App\Http\Requests\CreateAdventureRequest;
+use App\Http\Controllers\Controller;
+use App\Http\Requests\Request;
 use Carbon\Carbon;
 
 class AdventuresController extends Controller
@@ -41,13 +39,12 @@ class AdventuresController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  Request  $request
+     * @param  CreateAdventureRequest  $request
      * @return Response
      */
-    public function store(Request $request)
+    public function store(CreateAdventureRequest $request)
     {
-        $input = Request::all();
-        Adventure::create($input);
+        Adventure::create($request->all());
 
         return redirect('adventures');
     }
