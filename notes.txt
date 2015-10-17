@@ -40,7 +40,3 @@ in config/app.php under providers ->
 under facades ->
     add:    'Form'      => Illuminate\Html\FormFacade::class,
             'Html'      => Illuminate\Html\HtmlFacade::class,
-
-in AdventuresController
-    -> use Illuminate\Http\Request;
-    -> becomes: use Request;
