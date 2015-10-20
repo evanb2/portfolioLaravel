@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="row">
-    <div class="col-md-6 col-md-offset-3">
+    <div class="col-md-6 col-md-offset-3" id="adventures-content">
         <h2>Adventures</h2>
 
         @foreach ($adventures as $adventure)

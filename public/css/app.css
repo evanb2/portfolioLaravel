@@ -53,7 +53,7 @@ a:hover {
 .menu-links:hover {
   border-bottom: solid; }
 
-#about, #contact, #projects, #reading {
+#about, #projects {
   color: black; }
 
 #name, .jumbotron {
@@ -66,7 +66,7 @@ a:hover {
   line-height: 1.6em; }
 
 /** About Page */
-#about-content, #contact-content, #projects-index-content {
+#about-content, #contact-content, #projects-index-content, #adventures-content {
   margin-left: 25%;
   margin-right: 25%;
   background-color: white;
