@@ -40,3 +40,20 @@ in config/app.php under providers ->
 under facades ->
     add:    'Form'      => Illuminate\Html\FormFacade::class,
             'Html'      => Illuminate\Html\HtmlFacade::class,
+
+Middleware
+----------
+
+To apply middleware to an entire controller:
+    ->  public function __construct()
+        {
+            $this->middleware('auth');
+        }
+To apply to only a certain method:
+    ->  public function __construct()
+        {
+            $this->middleware('auth', ['only' => 'create']);
+
+            //or every method EXCEPT
+            $this->middleware('auth', ['except' => 'create']);
+        }

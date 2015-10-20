@@ -11,6 +11,16 @@ use Carbon\Carbon;
 class AdventuresController extends Controller
 {
     /**
+     * Only require authentication for @create and @edit
+     *
+     *
+     */
+    public function __construct()
+    {
+        $this->middleware('auth', ['only' => ['create', 'edit']]);
+    }
+
+    /**
      * Display a listing of the resource.
      *
      * @return Response

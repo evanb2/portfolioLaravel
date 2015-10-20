@@ -6,6 +6,8 @@
     <div class="col-md-6 col-md-offset-3" id="adventures-content">
         <h2>Adventures</h2>
 
+        <hr>
+
         @foreach ($adventures as $adventure)
             <article>
                 <h3>
