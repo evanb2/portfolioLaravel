@@ -1,5 +1,80 @@
+Some nifty commands for Laravel:
+
+    Check version: $ php artisan --version
+
+    Using Homestead as server, add domain name to hosts file: $ sudo vi /etc/hosts
+        -> opens file in vim
+        -> go to end of file type 'o' to add new line below curser
+        -> copy/paste your new IP address with site domain ex. '192.168.10.10  homestead.app'
+        -> press 'esc' to exit edit mode
+        -> type ':wq' and press enter to save and quit
+
+    After configuring Shared Folders in Homestead.yaml, you must use command: $ homestead up
+        -> you MUST run this command after setting filepath BEFORE you can access the server via 'http://homestead.app'
+
+    To access Homestead server: $ homestead ssh
+
+    Rename file .env.example to .env
+        -> $ mv .env.example .env
+
+    $ php artisan tinker
+        -> command line for testing functions and messing around
+----------------------------------------------------------
+Controllers
+
+    $ php artisan help make:controller
+        -> shows available commands for make:controller
+
+    $ php artisan make:controller PagesController --plain
+-----------------------------------------------------------
+Migrations
+
+    $ composer require doctrine/dbal
+        -> this is required in order to drop a column from a table using migrations
+
+    $ sqlite3 storage/database.sqlite
+        -> sqlite> .tables
+        -> sqlite> .schema
+
+    $ php artisan migrate
+    $ php artisan migrate:rollback (undo previous migration)
+    $ php artisan make:migration create_articles_table --create="articles"
+        -> make new migration    [ name of migration ] [--create="{name of table}"]
+-----------------------------------------------------------
+Eloquent
+
+    Method 1:
+        $article = new App\Article;
+        $article->title = "My First Article";
+        $article->body = "Lorem ipsum";
+        $article->published_at = Carbon\Carbon::now();
+    Method 2:
+        $article = App\Article::create(['title' => 'New Article', 'body' => 'New Body', 'published_at' => Carbon\Carbon::now()]);
+
+    $article->toArray();
+        -> turn article object into array for easy viewing
+
+    $article->save();
+        -> save to DB
+
+    $article->update(['body' => 'Updated Body']);
+        -> update a field and save()
+
+    App\Article::all()->toArray();
+        -> query DB, return all, cast to array
+
+    $found_article = App\Article::find(1);
+        -> query DB and find article with $id = 1
+-----------------------------------------------------------
+Resources
+
+    $ php artisan route:list
+        -> list all routes
+
+    Route::resource('articles', 'ArticlesController');
+        -> creates all CRUD routes in 1 line
+-----------------------------------------------------------
 Migrations/MySQL
-----------------
 
 $ ssh forge@104.131.122.40
 $ mysql -u forge -p
@@ -24,13 +99,12 @@ $ php artisan migrate:rollback
 to drop column in 'down' method must install dependency:
     -> $ composer require doctrine/dbal
     -> now you can use method dropColumn('column_name')
-
+-----------------------------------------------------------
 Eloquent
---------
-$ php artisan make:model Adventure
 
+$ php artisan make:model Adventure
+-----------------------------------------------------------
 Forms
------
 
 $ composer require illuminate/html
     ->1st party package with FormBuilder
@@ -40,9 +114,8 @@ in config/app.php under providers ->
 under facades ->
     add:    'Form'      => Illuminate\Html\FormFacade::class,
             'Html'      => Illuminate\Html\HtmlFacade::class,
-
+-----------------------------------------------------------
 Middleware
-----------
 
 To apply middleware to an entire controller:
     ->  public function __construct()
