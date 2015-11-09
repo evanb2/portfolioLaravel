@@ -5,6 +5,7 @@
 <div class="row">
     <div class="col-md-4" id="adventures-content">
         <h2>Adventures</h2>
+        <h2>(under construction)</h2>
 
         <hr>
 
