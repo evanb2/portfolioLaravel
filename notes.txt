@@ -87,7 +87,9 @@ $ mysql -u forge -p
 if app env = local {
     DB_HOST = 127.0.0.1 -> NOT 'localhost'
     MUST add line to 'mysql' array in database.php config file:
-        'port' => '8889'
+        'port' => env('DB_PORT', '3306');
+    then add to .env file:
+        DB_PORT=8889
 }
 
 $ php artisan make:migration --table="name_of_table"
