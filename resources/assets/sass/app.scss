@@ -82,7 +82,7 @@ a:hover {
 }
 
 /** About Page */
-#about-content, #contact-content, #projects-index-content, #adventures-content {
+#about-content, #contact-content, #projects-index-content {
     margin-left: 25%;
     margin-right: 25%;
     background-color: white;
@@ -151,6 +151,25 @@ a:hover {
 
 .projects {
     text-align: center;
+}
+
+/** Adventures Page */
+.modal {
+    position: fixed;
+    padding-top: 80px;
+    margin-left: 40%;
+}
+
+.modal-buttons {
+    background-color: gray;
+}
+
+#adventures-content {
+    background-color: white;
+    opacity: .93;
+    border-radius: 20px;
+    padding: 30px;
+    font-family: "Lato";
 }
 
 /* ------------ Mobile sizing ------------ */
