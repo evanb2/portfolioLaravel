@@ -34,16 +34,11 @@
                             <h4 class="modal-title" id="myModalLabel">{{ $adventure->trail_name }}</h4>
                         </div>
                         <div class="modal-body">
-                            <ul>
-                                <li>Trail Name: {{ $adventure->trail_name }}</li>
-                                <li>Difficulty: {{ $adventure->difficulty }}</li>
-                                <li>Rating: {{ $adventure->rating }}</li>
-                                <li>Description: {{ $adventure->description }}</li>
-                                <li>Directions: {{ $adventure->directions }}</li>
-                                <li>Length: {{ $adventure->length }}</li>
-                                <li>Loop: {{ $adventure->is_loop }}</li>
-                                <li>Date Hiked: {{ $adventure->hiked_on->diffForHumans() }}</li>
-                            </ul>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    {{ $adventure->description }}
+                                </div>
+                            </div>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

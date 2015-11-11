@@ -15,14 +15,17 @@ class CreateAdventuresTable extends Migration
         Schema::create('adventures', function (Blueprint $table) {
             $table->increments('id');
             $table->string('trail_name');
-            $table->integer('difficulty');
-            $table->integer('rating');
+            $table->string('location');
             $table->text('directions');
             $table->text('description');
+            $table->string('dog_friendly');
+            $table->string('difficulty');
+            $table->integer('rating');
             $table->integer('length');
-            $table->boolean('is_loop');
+            $table->string('is_loop');
+            $table->string('all_trails_url');
             $table->timestamps();
-            $table->timestamp('hiked_on');
+            $table->date('hiked_on');
         });
     }
 
