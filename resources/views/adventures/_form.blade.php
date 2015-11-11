@@ -10,17 +10,17 @@
 
     <div class="form-group">
         {!! Form::label('difficulty', 'Difficulty: ') !!}
-        {!! Form::input('number', 'difficulty', null, ['class' => 'form-control']) !!}
-    </div>
-
-    <div class="form-group">
-        {!! Form::label('directions', 'Directions: ') !!}
-        {!! Form::textarea('directions', null, ['class' => 'form-control']) !!}
+        {!! Form::input('text', 'difficulty', null, ['class' => 'form-control']) !!}
     </div>
 
     <div class="form-group">
         {!! Form::label('description', 'Description: ') !!}
         {!! Form::textarea('description', null, ['class' => 'form-control']) !!}
+    </div>
+
+    <div class="form-group">
+        {!! Form::label('directions', 'Directions: ') !!}
+        {!! Form::textarea('directions', null, ['class' => 'form-control']) !!}
     </div>
 
     <div class="form-group">
@@ -30,7 +30,12 @@
 
     <div class="form-group">
         {!! Form::label('is_loop', 'Loop: ') !!}
-        {!! Form::input('number', 'is_loop', null, ['class' => 'form-control']) !!}
+        <label class="radio-inline">
+            {!! Form::radio('is_loop', 'Out-and-Back') !!}Out-and-Back
+        </label>
+        <label class="radio-inline">
+            {!! Form::radio('is_loop', 'Loop') !!}Loop
+        </label>
     </div>
 
     <div class="form-group">
