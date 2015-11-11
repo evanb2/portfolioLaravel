@@ -27,7 +27,7 @@
                         </div>
                         <div class="modal-body">
                             <div class="row">
-                                <img src="/img/adventures/rachel_lake_trail/rachel_lake.jpg" alt="Rachel Lake" width="100%" />
+                                <img src="{{ $adventure->img }}" alt="{{ $adventure->trail_name }}" width="100%" />
                             </div>
                             <br>
                             <div class="row">

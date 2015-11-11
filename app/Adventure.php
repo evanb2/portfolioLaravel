@@ -18,7 +18,8 @@ class Adventure extends Model
         'is_loop',
         'hiked_on',
         'all_trails_url',
-        'elevation_gain'
+        'elevation_gain',
+        'img'
     ];
 
     protected $dates = ['hiked_on'];

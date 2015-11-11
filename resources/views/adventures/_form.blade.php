@@ -63,6 +63,11 @@
         {!! Form::input('date', 'hiked_on', date('Y-m-d'), ['class' => 'form-control']) !!}
     </div>
 
+    <div class="form-group">
+        {!! Form::label('img', 'Image Path: ') !!}
+        {!! Form::text('img', '/img/adventures/', ['class' => 'form-control']) !!}
+    </div>
+
     <!-- Add Adventure Form Input -->
     <div class="form-group">
         {!! Form::submit($submitBtnText, ['class' => 'btn btn-primary form-control']) !!}
