@@ -29,6 +29,11 @@
     </div>
 
     <div class="form-group">
+        {!! Form::label('elevation_gain', 'Elevation Gain (ft): ') !!}
+        {!! Form::input('number', 'elevation_gain', null, ['class' => 'form-control']) !!}
+    </div>
+
+    <div class="form-group">
         {!! Form::label('is_loop', 'Loop: ') !!}
         <label class="radio-inline">
             {!! Form::radio('is_loop', 'Out-and-Back') !!}Out-and-Back

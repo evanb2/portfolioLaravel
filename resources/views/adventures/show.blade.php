@@ -22,7 +22,7 @@
                         <div class="modal-body">
                             <div class="row">
                                 <div class="col-md-2 col-md-offset-2">
-                                    {{ $adventure->length }}
+                                    {{ $adventure->length }} mi
                                 </div>
                                 <div class="col-md-3 col-md-offset-2">
                                     {{ $adventure->is_loop }}
@@ -31,7 +31,7 @@
                                     {{ $adventure->dog_friendly }}
                                 </div>
                                 <div class="col-md-3 col-md-offset-2">
-                                    {{ $adventure->is_loop }}
+                                    {{ $adventure->elevation_gain }} ft
                                 </div>
                             </div>
                             <hr>
