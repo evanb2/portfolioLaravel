@@ -10,32 +10,43 @@
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                             <div class="modal-title" id="myModalLabel">
                                 <h4>{{ $adventure->trail_name }}</h4>
-                                <div class="col-md-2">
-                                    {{ $adventure->difficulty }}
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        {{ $adventure->difficulty }}
+                                    </div>
+                                    <div class="col-md-2 col-md-offset-2">
+                                        {{ $adventure->rating }}
+                                    </div>
                                 </div>
-                                <div class="col-md-2 col-md-offset-2">
-                                    {{ $adventure->rating }}
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        {{ $adventure->location }}
+                                    </div>
                                 </div>
                             </div>
-                            <br>
                         </div>
                         <div class="modal-body">
                             <div class="row">
-                                <div class="col-md-2 col-md-offset-2">
+                                <img src="/img/adventures/rachel_lake_trail/rachel_lake.jpg" alt="Rachel Lake" width="100%" />
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-6" style="text-align: center;">
                                     {{ $adventure->length }} mi
                                 </div>
-                                <div class="col-md-3 col-md-offset-2">
+                                <div class="col-md-6" style="text-align: center;">
                                     {{ $adventure->is_loop }}
                                 </div>
-                                <div class="col-md-2 col-md-offset-2">
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6" style="text-align: center;">
                                     {{ $adventure->dog_friendly }}
                                 </div>
-                                <div class="col-md-3 col-md-offset-2">
+                                <div class="col-md-6" style="text-align: center;">
                                     {{ $adventure->elevation_gain }} ft
                                 </div>
                             </div>
                             <hr>
-                            <br>
                             <div class="row">
                                 <div class="col-md-12">
                                     {{ $adventure->description }}

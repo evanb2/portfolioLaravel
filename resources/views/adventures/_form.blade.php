@@ -4,6 +4,11 @@
     </div>
 
     <div class="form-group">
+        {!! Form::label('location', 'Location: ') !!}
+        {!! Form::text('location', null, ['class' => 'form-control']) !!}
+    </div>
+
+    <div class="form-group">
         {!! Form::label('rating', 'Rating: ') !!}
         {!! Form::input('number', 'rating', null, ['class' => 'form-control']) !!}
     </div>
