@@ -7,7 +7,7 @@
     <hr>
 
     {!! Form::open(['url' => 'adventures']) !!}
-        @include('adventures._form', ['submitBtnText' => 'Add Adventure'])
+        @include('adventures._form', ['submitBtnText' => 'Add Adventure', 'imagePath' => '/img/adventure/'])
     {!! Form::close() !!}
 
     @include('errors.list')

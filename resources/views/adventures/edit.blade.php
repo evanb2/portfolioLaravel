@@ -5,7 +5,7 @@
     <h2>Edit: {!! $adventure->trail_name !!}</h2>
 
     {!! Form::model($adventure, ['method' => 'PATCH', 'action' => ['AdventuresController@update', $adventure->id]]) !!}
-        @include('adventures._form', ['submitBtnText' => 'Update Adventure'])
+        @include('adventures._form', ['submitBtnText' => 'Update Adventure', 'imagePath' => $adventure->img])
     {!! Form::close() !!}
 
     @include('errors.list')

@@ -65,7 +65,7 @@
 
     <div class="form-group">
         {!! Form::label('img', 'Image Path: ') !!}
-        {!! Form::text('img', '/img/adventures/', ['class' => 'form-control']) !!}
+        {!! Form::text('img', $imagePath, ['class' => 'form-control']) !!}
     </div>
 
     <!-- Add Adventure Form Input -->
