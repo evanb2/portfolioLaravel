@@ -39,6 +39,16 @@
     </div>
 
     <div class="form-group">
+        {!! Form::label('dog_friendly', 'Dog Friendly: ') !!}
+        <label class="radio-inline">
+            {!! Form::radio('dog_friendly', 'Yes') !!}Yes
+        </label>
+        <label class="radio-inline">
+            {!! Form::radio('dog_friendly', 'No') !!}No
+        </label>
+    </div>
+
+    <div class="form-group">
         {!! Form::label('hiked_on', 'Date Hiked: ') !!}
         {!! Form::input('date', 'hiked_on', date('Y-m-d'), ['class' => 'form-control']) !!}
     </div>

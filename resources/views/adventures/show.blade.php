@@ -8,9 +8,34 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="myModalLabel">{{ $adventure->trail_name }}</h4>
+                            <div class="modal-title" id="myModalLabel">
+                                <h4>{{ $adventure->trail_name }}</h4>
+                                <div class="col-md-2">
+                                    {{ $adventure->difficulty }}
+                                </div>
+                                <div class="col-md-2 col-md-offset-2">
+                                    {{ $adventure->rating }}
+                                </div>
+                            </div>
+                            <br>
                         </div>
                         <div class="modal-body">
+                            <div class="row">
+                                <div class="col-md-2 col-md-offset-2">
+                                    {{ $adventure->length }}
+                                </div>
+                                <div class="col-md-3 col-md-offset-2">
+                                    {{ $adventure->is_loop }}
+                                </div>
+                                <div class="col-md-2 col-md-offset-2">
+                                    {{ $adventure->dog_friendly }}
+                                </div>
+                                <div class="col-md-3 col-md-offset-2">
+                                    {{ $adventure->is_loop }}
+                                </div>
+                            </div>
+                            <hr>
+                            <br>
                             <div class="row">
                                 <div class="col-md-12">
                                     {{ $adventure->description }}
