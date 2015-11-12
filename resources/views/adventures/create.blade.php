@@ -6,7 +6,7 @@
 
     <hr>
 
-    {!! Form::open(['url' => 'adventures']) !!}
+    {!! Form::open(['url' => 'adventures', 'class' => 'form-horizontal']) !!}
         @include('adventures._form', ['submitBtnText' => 'Add Adventure', 'imagePath' => '/img/adventure/'])
     {!! Form::close() !!}
 
