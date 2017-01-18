@@ -56,11 +56,11 @@
             </div>
         </div>
 
-        <div class="row resume-link">
-            <div class="col-sm-4 col-sm-offset-4">
-                <a href="/resume">Resume</a>
-            </div>
-        </div>
+        {{--<div class="row resume-link">--}}
+            {{--<div class="col-sm-4 col-sm-offset-4">--}}
+                {{--<a href="/resume">Resume</a>--}}
+            {{--</div>--}}
+        {{--</div>--}}
     </div>
 </div>
 
